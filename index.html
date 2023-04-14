@@ -448,17 +448,116 @@
             </li>
           </ul>
         </section>
+        <div class="send-footer">
+          <p class="send-title">Subscribe</p>
+          <form class="send-form">
+            <div class="send-wrap">
+              <input
+                class="send-input"
+                type="email"
+                name="send-email"
+                placeholder="E-mail"
+                required
+              />
+              <button class="btn-footer" type="submit">
+                Subscribe
+                <svg class="send-icon" width="24" height="24">
+                  <use href="./images/sprite_svg.svg#icon-frame-footer"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- FOOTER -->
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" data-modal-close type="button">
-          <svg class="modal-btn" width="8" height="8">
-            <use href="./images/sprite_svg.svg#icon-close-black"></use>
-          </svg>
-        </button>
+        <div class="modal-close">
+          <button class="modal-close-btn" data-modal-close type="button">
+            <svg class="modal-icon-close" width="8" height="8">
+              <use href="./images/sprite_svg.svg#icon-close-black"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="input-text">Name</label>
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/sprite_svg.svg#icon-person-modal"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label for="phone-name" class="input-text">Phone</label>
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                type="tel"
+                name="phone-name"
+                id="phone-name"
+                required
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/sprite_svg.svg#icon-phone-modal"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="email-name" class="input-text">Email</label>
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                type="email"
+                name="email-name"
+                id="email-name"
+                required
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/sprite_svg.svg#icon-email-modal"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-text" class="input-text">Comment </label>
+            <textarea
+              class="modal-textarea"
+              name="user-text"
+              id="user-text"
+              placeholder="Text input"
+              required
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              class="input-check visually-hidden"
+              value="tru"
+            />
+            <label for="privacy" class="check-text">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/sprite_svg.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="modal-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
