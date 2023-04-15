@@ -881,3 +881,17 @@ body {
 .input-check:focus + .check-text span {
   border-color: #4d5ae5;
 }
+
+.privacy-text {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #757575;
+}
+
+.privacy-link {
+  color: #4d5ae5;
+  text-decoration-line: underline;
+}
